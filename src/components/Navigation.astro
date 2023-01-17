@@ -1,0 +1,21 @@
+---
+---
+<div class="nav-links">
+  <a href="/">Home</a>
+  <a href="/about/">About</a>
+  <a href="/blog/">Blog</a>
+  <a href="/tags/">Tags</a>
+</div>
+
+<style>
+  .nav-links:is(:hover, :focus-within) {
+		background-position: 0;
+	}
+	.nav-links a:hover, a:focus   {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+</style>

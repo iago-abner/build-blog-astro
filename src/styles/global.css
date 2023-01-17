@@ -1,0 +1,100 @@
+html {
+  background-color: #f1f5f9;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  min-height: 100vh;
+  height: auto;
+  width: 100%;
+  line-height: 1.5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 1rem 0;
+  font-size: 2.5rem;
+}
+
+header {
+  margin: 0 auto;
+  padding: 1rem;
+  max-width: 60ch;
+}
+/* nav styles */
+.hamburger {
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  display: block;
+  width: 40px;
+  height: 5px;
+  margin-bottom: 10px;
+  background-color: #ff9776;
+}
+
+.nav-links {
+  width: 100%;
+  top: 5rem;
+  left: 48px;
+  background-color: #ff9776;
+  display: none;
+  margin: 0;
+}
+
+.nav-links a {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nav-links a:hover,
+a:focus {
+  color: #da62c4;
+}
+
+.expanded {
+  display: unset;
+}
+
+.dark body {
+  background-color: #0d0950;
+  color: #fff;
+}
+
+.dark .instructions {
+  color: black;
+}
+
+.dark .nav-links a {
+  color: #fff;
+}
+
+@media screen and (min-width: 636px) {
+  .nav-links {
+    justify-content: space-around;
+    display: flex;
+    position: static;
+    width: auto;
+    background: none;
+  }
+
+  .nav-links a {
+    display: inline-block;
+    padding: 15px 20px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}

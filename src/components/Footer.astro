@@ -1,0 +1,21 @@
+---
+import Social from "./Social.astro";
+
+const platform = "github";
+const username = "iago-abner";
+---
+
+<style>
+  footer {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding-bottom: 2rem;
+  }
+</style>
+
+<footer>
+  <Social platform="Twitter" username="iago-abner" />
+  <Social platform="Github" username="iago-abner" />
+  <Social platform="Youtube" username="iago-abner" />
+</footer>
